@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Services() {
   return (
-    <div className="container py-lg-5">
+    <div className="container py-5">
 
 
       <div className="row">

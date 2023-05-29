@@ -1,4 +1,8 @@
 import React, { useState } from "react";
+import Box from "@mui/material/Box";
+import TextField from "@mui/material/TextField";
+import Button from "@mui/material/Button";
+import Stack from "@mui/material/Stack";
 
 export default function ContactForm() {
   const [input, setInput] = useState({
@@ -17,74 +21,95 @@ export default function ContactForm() {
 
   const Submited = (event) => {
     event.preventDefault();
-    setInput({
-      name: "",
-      email: "",
-      message: "",
-      mobile: "",
-    });
-    alert("Form Submitted \nwe will contact you soon.");
+    if (
+      input.name === "" ||
+      input.email === "" ||
+      input.mobile === "" ||
+      input.message === ""
+    ) {
+      alert("Please Fill All The Fields");
+      return;
+    }else if(input.mobile.length < 10) {
+      alert("Please enter right mobile number");
+      return;
+    }else {
+      setInput({
+        name: "",
+        email: "",
+        message: "",
+        mobile: "",
+      });
+      alert("Form Submitted \nwe will contact you soon.");
+    }
   };
-
 
   return (
     <>
-      <div className="container py-lg-5">
-        <form
-          className="justify-content-center"
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            flexDirection: "column",
-            padding: "5rem 20rem",
-            fontSize: "1.3rem",
-          }}
-          onSubmit={Submited}
-        >
-          <input
-            className="inputEdits"
-            type="text"
-            name="name"
-            id="name"
-            value={input.name}
-            placeholder="Enter Your Name"
-            onChange={InputEvent}
-            required
-          />
-          <input
-            className="inputEdits"
-            type="number"
-            name="mobile"
-            id="mobile"
-            value={input.mobile}
-            placeholder="Enter Your Mobile Number"
-            onChange={InputEvent}
-            required
-          />
-          <input
-            className="inputEdits"
-            type="email"
-            name="email"
-            id="email"
-            value={input.email}
-            placeholder="Enter Your Email"
-            onChange={InputEvent}
-            required
-          />
-          <textarea
-            className="inputEdits"
-            name="message"
-            id="message"
-            value={input.message}
-            placeholder="Enter Your Message"
-            onChange={InputEvent}
-            required
-          />
-
-          <button type="submit" className="mybtn">
-            Submit
-          </button>
-        </form>
+      <div className="container py-5">
+        <div className="row justify-content-center">
+          <div className="col-12">
+            <Box
+              display="flex"
+              justifyContent="center"
+              component="form"
+              marginTop="5rem"
+              sx={{
+                "& > :not(style)": { m: 1, width: "25ch" },
+              }}
+              noValidate
+              autoComplete="off"
+              onSubmit={Submited}
+            >
+              <Stack direction="column" spacing={2}>
+                <TextField
+                  name="name"
+                  onChange={InputEvent}
+                  value={input.name}
+                  id="outlined-basic"
+                  varient="outlined"
+                  label="Your Name"
+                  color="primary"
+                  required
+                />
+                <TextField
+                  name="mobile"
+                  onChange={InputEvent}
+                  value={input.mobile}
+                  type="number"
+                  label="Your Mobile Number"
+                  id="outlined-basic"
+                  varient="outlined"
+                  color="primary"
+                  required
+                />
+                <TextField
+                  name="email"
+                  onChange={InputEvent}
+                  value={input.email}
+                  label="Your Email"
+                  id="outlined-basic"
+                  varient="outlined"
+                  color="primary"
+                  required
+                />
+                <TextField
+                  name="message"
+                  onChange={InputEvent}
+                  value={input.message}
+                  label="Your Message"
+                  id="outlined-multiline-flexible"
+                  color="primary"
+                  maxRows={4}
+                  multiline
+                  required
+                />
+                <Button type="submit" variant="outlined">
+                  Submit
+                </Button>
+              </Stack>
+            </Box>
+          </div>
+        </div>
       </div>
     </>
   );

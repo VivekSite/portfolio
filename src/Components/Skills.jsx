@@ -3,7 +3,7 @@ import React from 'react';
 export default function Skills() {
 
   return (
-    <div className="container py-lg-5">
+    <div className="container py-5 py-sm-5">
         <div className="row">
           <div className="col-12 col-md-10 mx-auto text-center">
             <h1 className="display-4 text-black">Skills</h1>
