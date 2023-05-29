@@ -16,22 +16,22 @@ export default function Navbar() {
             <div className="col-6">
               <div className="row">
                 <div className="col">
-                  {<ActiveLink to="/">Home</ActiveLink>}
+                  {<ActiveLink to="MyWebsite/">Home</ActiveLink>}
                 </div>
                 <div className="col">
-                  {<ActiveLink to="/blogs">Blogs</ActiveLink>}
+                  {<ActiveLink to="MyWebsite/blogs">Blogs</ActiveLink>}
                 </div>
                 <div className="col">
-                  {<ActiveLink to="/skills">Skills</ActiveLink>}
+                  {<ActiveLink to="MyWebsite/skills">Skills</ActiveLink>}
                 </div>
                 <div className="col">
-                  {<ActiveLink to="/services">Services</ActiveLink>}
+                  {<ActiveLink to="MyWebsite/services">Services</ActiveLink>}
                 </div>
                 <div className="col">
-                  {<ActiveLink to="/projects">Projects</ActiveLink>}
+                  {<ActiveLink to="MyWebsite/projects">Projects</ActiveLink>}
                 </div>
                 <div className="col">
-                  {<ActiveLink to="/contact">ContactMe</ActiveLink>}
+                  {<ActiveLink to="MyWebsite/contact">ContactMe</ActiveLink>}
                 </div>
               </div>
             </div>

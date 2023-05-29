@@ -17,12 +17,12 @@ export default function App() {
       <Navbar />
 
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/skills" element={<Skills />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/blogs" element={<Blogs />} />
-        <Route path="/contact" element={<ContactUs />} />
-        <Route path="/services" element={<Services />} />
+        <Route path="MyWebsite/" element={<Home />} />
+        <Route path="MyWebsite/skills" element={<Skills />} />
+        <Route path="MyWebsite/projects" element={<Projects />} />
+        <Route path="MyWebsite/blogs" element={<Blogs />} />
+        <Route path="MyWebsite/contact" element={<ContactUs />} />
+        <Route path="MyWebsite/services" element={<Services />} />
         <Route path="*" element={<Error />} />
       </Routes>
     </>
