@@ -3,7 +3,7 @@ import React from "react";
 export default function HomePage() {
   return (
     <>
-      <div className="container py-5">
+      <div className="container py-5 Zup">
         <div className="row justify-content-center">
           <div className="col-lg-8">
             <div className="card">

@@ -1,6 +1,7 @@
 import React from "react";
 // import axios from "axios";
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import "../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
 import { Routes, Route } from "react-router-dom";
 import Home from "./Home";
 import Skills from "./Skills";
