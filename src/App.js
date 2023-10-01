@@ -13,12 +13,12 @@ export default function App() {
   return (
     <>
       <Routes>
-        <Route path="/MyWebsite/" element={<HomePage />} />
-        <Route path="/MyWebsite/skills" element={<SkillsPage />} />
-        <Route path="/MyWebsite/projects" element={<ProjectsPage />} />
-        <Route path="/MyWebsite/resume" element={<Resume />} />
-        <Route path="/MyWebsite/contact" element={<ContactPage />} />
-        <Route path="/MyWebsite/services" element={<ServicesPage />} />
+        <Route path="/portfolio/" element={<HomePage />} />
+        <Route path="/portfolio/skills" element={<SkillsPage />} />
+        <Route path="/portfolio/projects" element={<ProjectsPage />} />
+        <Route path="/portfolio/resume" element={<Resume />} />
+        <Route path="/portfolio/contact" element={<ContactPage />} />
+        <Route path="/portfolio/services" element={<ServicesPage />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
     </>

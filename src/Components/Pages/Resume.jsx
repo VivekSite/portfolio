@@ -34,7 +34,7 @@ const Resume = () => {
             <h3>DataBases : <span>MySQL, MongoDB</span></h3>
             <h3>Web Development : <span>HTML, CSS, JS</span></h3>
             <h3>MERN Apps Development : <span>MongoDB, React, Express, NodeJS</span></h3>
-            <h3><NavLink to='/MyWebsite/skills' style={{color:'#65cb49'}}>For More Information</NavLink></h3>
+            <h3><NavLink to='/portfolio/skills' style={{color:'#65cb49'}}>For More Information</NavLink></h3>
           </div>
 
           <div className="projects">
