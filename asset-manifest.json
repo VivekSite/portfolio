@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.50bcb77a.css",
+    "main.js": "/portfolio/static/js/main.60cd6005.js",
+    "static/media/image1.jpg": "/portfolio/static/media/image1.ed9e9ea5393a66bf0472.jpg",
+    "static/media/vivek.png": "/portfolio/static/media/vivek.c4c796d17f54095bd25c.png",
+    "static/media/WebPhoto.png": "/portfolio/static/media/WebPhoto.1ae57d3753d5bf756623.png",
+    "static/media/404.png": "/portfolio/static/media/404.0aa9e308f47c564851f7.png",
+    "static/media/bg1.png": "/portfolio/static/media/bg1.0cd0334e79f8beb27a2f.png",
+    "static/media/bg3.png": "/portfolio/static/media/bg3.3d9e8099bb4a4656e9f4.png",
+    "static/media/bg2.png": "/portfolio/static/media/bg2.d6959656017c92087877.png",
+    "index.html": "/portfolio/index.html",
+    "main.50bcb77a.css.map": "/portfolio/static/css/main.50bcb77a.css.map",
+    "main.60cd6005.js.map": "/portfolio/static/js/main.60cd6005.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.50bcb77a.css",
+    "static/js/main.60cd6005.js"
+  ]
+}
