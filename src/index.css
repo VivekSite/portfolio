@@ -1,95 +1,359 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Mooli&family=Poppins:wght@100&family=Roboto+Mono&display=swap');
+
+*{
   margin: 0;
-  font-family: monospace,-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Robot Mono', 'Mooli', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+/*****************  Layout Styling  *****************/
+
+#Layout{
+  margin: 0 15rem 0 15rem;
+  min-height: 90vh;
+  transition: all 0.2s ease;
 }
 
-.NavLink{
+@media (max-width:1300px){
+  #Layout{
+    margin: 0 1rem 0 1rem;
+  }
+}
+
+
+/*****************  Error Styling  *****************/
+
+#errorPage{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#errorPage img{
+  width: 60%;
+}
+
+
+/*****************  Footer Styling  *****************/
+
+#footer{
+  background-color: #3b3b3b;
+  margin: 3rem 15rem 0.5rem 15rem;
+  border-radius: 1rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+@media (max-width:1300px){
+  #footer{
+    margin: .5rem 0 0 0;
+    height: 3rem;
+    border-radius: 0;
+  }
+}
+
+/*****************  Navigation Bar Styling  *****************/
+
+#navbar{
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 15rem 2rem 15rem;
+}
+
+#navbar .openMenu{
+  display: flex;
+  flex-direction: column;
+}
+
+#menubar{ display: flex; }
+
+.nav-link{
+  font-size: medium;
+  margin: 0 0 0 1.5rem;
+  color: #3b3b3b;
   text-decoration: none;
-  color: #7c7c7c;
 }
 
+.active{ color: #65cb49; }
 
-.inputEdits{
+#menu{
+  height: 2.5rem;
+  font-size: large;
   border: none;
+  box-shadow: 2px 2px 5px #3b3b3b;
+  border-radius: .3rem;
+  padding: .4rem .8rem .4rem .8rem;
+  background-color: #e4f0e0;
+  color: #3b3b3b;
+  transition: all .2s ease;
+}
+
+#menu:hover{
+  box-shadow: 2px 2px 5px #3b3b3b;
+  color: #e4f0e0;
+  background-color: #3b3b3b;
+}
+
+#menu{ display: none; }
+
+@media (max-width:1300px){
+  #menubar{ display: none; }
+  #menu{ display: block; font-size: medium;}
+  #navbar{
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 2rem 1rem 2rem ;
+  }
+}
+
+/*****************  Image-search Styling  *****************/
+
+#image-search, .altImage{
+  display: flex;
+  justify-content: center;
+  min-height: 700px;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+#image-search img{ width: 100%; }
+#searchBar{ margin: 2rem 0rem 1rem 0rem; }
+
+#searchBar input{
+  background-color: #e4f0e0;
+  color: #3b3b3b;
+  width: 100%;
+  font-size: medium;
+  border: none;
+  outline: none;
   border-radius: 1rem;
   padding: 1rem;
-  margin-bottom: 1rem;
-  border-bottom: 2px solid black;
+  box-shadow: 2px 2px 5px #a6a5a5;
 }
 
-.mybtn{
-  width: 100px;
-  font-size: 1.3rem;
-  background-color: transparent;
+
+
+@media (max-width:1300px){
+  #searchBar input, #image-search{
+    border-radius: 1rem;
+  }
+}
+
+/*****************  Skills Card Styling  *****************/
+
+#cardsContainer{
+  border-radius: 1.5rem;
+  padding: 1rem;
+  display: grid;
+  grid: auto / auto auto auto;
+}
+
+#cardBody{
+  border-radius: 1.5rem;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  box-shadow: 2px 2px 5px #a6a5a5;
+}
+
+.skill-heading{
+  margin: 5rem 2rem 0 2rem;
   border-radius: 1rem;
-  border: 2px solid black;
-  transition: all 0.2s ease-in-out;
-}
-
-.mybtn:hover{
-  background-color: #7c7c7c;
+  box-shadow: 2px 2px 5px #a6a5a5;
+  padding: 1rem 0 1rem 0;
+  background-color: #868383;
   color: white;
-  border: 2px solid #7c7c7c;
+}
 
+@media (max-width:1300px){
+  #cardBody{
+    height: 15rem;
+  }
+}
+
+@media (max-width:1000px){
+  .skill-heading{
+    margin: 3rem 1.2rem 0 1.2rem;
+  }
+
+  #cardsContainer{
+    border-radius: 1rem;
+    padding: .5rem;
+    grid: auto / auto auto;
+  }
+}
+
+@media (max-width:750px){
+  #cardsContainer{
+    border-radius: 1rem;
+    padding: .5rem;
+    grid: auto / auto;
+  }
 }
 
 
+/*****************  Projects Card Styling  *****************/
 
-
-
-/* =============================================================================
-=============================================================================
-                          MOBILE MENU STARTS
-=============================================================================
-============================================================================= */
-
-
-.menu {
-  display: none;
+#ProjectsContainer{
+  margin: 5rem 0 0 0;
+  display: grid;
+  grid: auto / auto;
 }
 
-@media (max-width:1200px){
+#ProjectCard{
+  border-radius: 1.5rem;
+  display: flex;
+  margin: 1rem;
+  box-shadow: 2px 2px 10px #a6a5a5;
+}
 
-  .menu.open {
-    display: block;
-    position: relative;
-    top: 40px;
-    right: 10px; 
-    background-color: #d0d0d0;
-    padding: 10px;
-    border: 1px solid #d0d0d0;
-    border-radius: 0.5rem;
-    padding: 1rem;
-    z-index: 999;
-    transition: all 0.5s linear;
-  }
+#ProjectCard img{
+  border-radius: 2rem;
+  width: 40%;
+  padding: 1rem;
+}
 
-  .Zup{
-    position:relative;
-    z-index:-1;
-  }
+#ProjectCard div{
+  border-radius: 1.5rem;
+  width: 50%;
+  padding: 1rem;
+}
 
-  .menu.open{
-    top:0;
-  }
+#ProjectCard div p{
+  margin: 2rem 0 0 0;
+}
 
-  .menu-right{
-    display: flex;
-    justify-content: end;
-  }
-
-  .MenuOpen{
-    display: flex;
+@media (max-width:1000px){
+  #ProjectsContainer{ margin: 0; }
+  #ProjectCard div h1{ font-size: x-large; }
+  #ProjectCard img{ width: 100%; }
+  #ProjectCard div{ width: 100%; }
+  #ProjectCard{
+    border-radius: 1rem;
     flex-direction: column;
   }
+}
 
+
+/*****************  Resume Styling  *****************/
+
+#resume-body{
+  border-radius: 1rem;
+  margin: 4rem 10rem 0 10rem;
+  height: 90vh;
+}
+
+.details-section{
+  display: flex;
+  margin: 2rem 0 0 0;
+}
+
+.details-section img{
+  width: 160px;
+  border-radius: 1rem;
+  margin: 0 1rem 0 1rem;
+}
+
+.resume-title{
+  margin: 1rem;
+  box-shadow: 2px 2px 5px #a6a5a5;
+  background-color: #666666;
+  border-radius: 0.7rem;
+  padding: 0.7rem;
+  color: white;
+}
+
+#info-section{
+  display: grid;
+  grid: auto/auto auto;
+}
+
+.skills h3, .projects h3{
+  margin: 2rem;
+}
+
+.skills h3 span, .projects h3 span{
+  color: gray;
+}
+
+@media (max-width:1300px){
+  #resume-body{
+    border-radius: 1rem;
+    margin: 4rem 2rem 0 2rem;
+    height: 90vh;
+  }
+
+}
+
+@media (max-width:800px){
+
+  .skills h3, .projects h3{
+    margin: 1rem;
+  }
+
+  .details-section img{
+    width: 100px;
+  }  
+
+  #info-section{
+    display: grid;
+    grid: auto/auto;
+  }
+
+  .resume-title{
+    margin: .5rem;
+    padding: 0.2rem;
+  }
+
+  #resume-body{
+    border-radius: 1rem;
+    margin: 2rem 0 0 0;
+    height: 90vh;
+  }
+}
+
+
+/*****************  Contact Form Styling  *****************/
+
+#contact-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-box{
+  min-width: 330px;
+  border: none;
+  outline: none;
+  margin: .5rem;
+  padding: .5rem;
+  border-radius: 1rem;
+  font-size: large;
+}
+
+.btn{
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: .5rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  transition: 0.2s ease;
+  font-size: large;
+}
+
+.btn:hover{
+  color: black;
+  background-color: #D9EEE1;
 }

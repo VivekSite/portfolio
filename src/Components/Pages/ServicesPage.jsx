@@ -1,8 +1,9 @@
 import React from "react";
+import Layout from "../Layout/Layout";
 
-export default function Services() {
+export default function ServicesPage() {
   return (
-    <div className="container py-5">
+    <Layout className="container py-5">
 
 
       <div className="row">
@@ -63,6 +64,6 @@ export default function Services() {
         </div>
   
       </div>
-    </div>
+    </Layout>
   );
 }
