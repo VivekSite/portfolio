@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <div>
       <div id="navbar">
-        <div className="logo">MyWebsite</div>
+        <div className="logo">VivekSahani</div>
         <div id="menubar" className=''>
           <NavLink to='/portfolio/' className='nav-link'>Home</NavLink>
           <NavLink to='/portfolio/skills' className='nav-link'>Skills</NavLink>
