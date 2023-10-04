@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ProjectsCard = ({source, bgColor, children}) => {
+const ProjectsCard = ({source, bgColor, children, href}) => {
   return (
     <div>
       <div id="ProjectCard" style={{backgroundColor:bgColor}}>

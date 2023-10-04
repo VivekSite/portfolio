@@ -50,6 +50,24 @@
   color: white;
 }
 
+#imageGen{
+  text-align: center;
+  border: 1px solid #3b3b3b;
+  border-radius: 1rem;
+  background-color: #3b3b3b;
+  padding: .2rem 2rem;
+  width: 100%;
+  color: white;
+  text-decoration: none;
+  border: none;
+  transition: .2s ease;
+}
+
+#imageGen:hover{
+  color: #3b3b3b;
+  background-color: white;
+}
+
 @media (max-width:1300px){
   #footer{
     margin: .5rem 0 0 0;
@@ -231,7 +249,17 @@
 }
 
 #ProjectCard div p{
-  margin: 2rem 0 0 0;
+  margin: .5rem 0 0 0;
+}
+
+#ProjectCard div h1 a{
+  font-size: small;
+  color: black;
+  text-decoration: none;
+}
+
+#ProjectCard div h1 a:hover{
+  color: rgb(111, 110, 110);
 }
 
 @media (max-width:1000px){
@@ -251,7 +279,7 @@
 #resume-body{
   border-radius: 1rem;
   margin: 4rem 10rem 0 10rem;
-  height: 90vh;
+  min-height: 90vh;
 }
 
 .details-section{
@@ -283,7 +311,7 @@
   margin: 2rem;
 }
 
-.skills h3 span, .projects h3 span{
+span, span a{
   color: gray;
 }
 

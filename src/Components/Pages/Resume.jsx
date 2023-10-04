@@ -9,7 +9,7 @@ const Resume = () => {
       <div id="resume-body">
         <div className='resume-title' style={{textAlign:'center'}}>
           <h2>Vivek Sahani</h2>
-          <h5 style={{color:'#b6b6b6'}}>MERN Developer</h5>
+          <h5 style={{color:'#b6b6b6'}}>MERN Stack Developer</h5>
         </div>
 
         <div className='details-section'>
@@ -25,7 +25,6 @@ const Resume = () => {
         </div>
 
         <div id='info-section'>
-
           <div className="skills">
             <h2 className='resume-title'>Skills</h2>
             <h3>Programming Laguages : <span>C++, Java, Python, JavaScript</span></h3>
@@ -39,9 +38,18 @@ const Resume = () => {
 
           <div className="projects">
             <h2 className='resume-title'>Projects</h2>
+            <h3><span><a href="https://viveksite.github.io/portfolio/" rel="noreferrer" target="_blank">My Portfolio Website</a></span></h3>
+            <h3><span><a href="https://viveksite.github.io/image_generator/" rel="noreferrer" target="_blank">ImageGenerator</a></span></h3>
+            <h3><NavLink to='/portfolio/projects' style={{color:'#65cb49'}}>For More Projects</NavLink></h3>
           </div>
         </div>
-
+        <div id="achievement" className='skills'>
+          <h2 className='resume-title'>Achievements</h2>
+          <h3>On Codewars : <span>Solved 250+ Questions</span></h3>
+          <h3>On LeetCode : <span>Solved 10+ Questions</span></h3>
+          <h3>On HackerEarth : <span>Solved 17+ Questions</span></h3>
+          <h3>Typing Speed : <span>average-50wpm, max-70wpm</span></h3>
+        </div>
       </div>
     </Layout>
   )

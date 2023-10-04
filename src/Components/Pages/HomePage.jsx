@@ -24,6 +24,10 @@ export default function HomePage() {
       <section id="image-search">
         <img src={`https://picsum.photos/${ getWidth() > 500 ? getWidth()-480 : getWidth()}/800?${search}`} alt="Please Wait..." />
       </section>
+      <div style={{textAlign:'center', marginTop:'5rem'}}>
+        <p style={{marginBottom:'1rem'}}>This is randomaly generated image. When you type something it will automatically  Generate Diffenrent Random Image.<br />You can Try this image generator</p>
+        <a id="imageGen" href="https://viveksite.github.io/image_generator/" rel="noreferrer" target="_blank">click here to try</a>
+      </div>
     </Layout>
   );
 }

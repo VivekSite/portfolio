@@ -21,6 +21,9 @@ const Header = () => {
         </div>
         <button id='menu' className='' onClick={handleMenu}>menu</button>
       </div>
+      <div>
+        
+      </div>
     </div>
   )
 }
