@@ -38,8 +38,13 @@ const Resume = () => {
 
           <div className="projects">
             <h2 className='resume-title'>Projects</h2>
+
             <h3><span><a href="https://viveksite.github.io/portfolio/" rel="noreferrer" target="_blank">My Portfolio Website</a></span></h3>
+
             <h3><span><a href="https://viveksite.github.io/image_generator/" rel="noreferrer" target="_blank">ImageGenerator</a></span></h3>
+
+            <h3><span><a href="https://dark-gray-kangaroo-gear.cyclic.app/" rel="noreferrer" target="_blank">Register/Login System</a></span></h3>
+
             <h3><NavLink to='/portfolio/projects' style={{color:'#65cb49'}}>For More Projects</NavLink></h3>
           </div>
         </div>

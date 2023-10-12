@@ -27,10 +27,15 @@ export default function Projects() {
 
         </ProjectsCard>
 
-        <ProjectsCard bgColor='#FFF4A3' source={require('./../../Images/bg1.png')} >
-          <h1>Project Heading</h1>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci possimus hic aperiam fugit minima, temporibus blanditiis corporis excepturi tempore dolorum id optio, nam odio. Est, animi. Hic voluptatibus corporis rem fugit neque? Consequuntur, impedit consequatur. Ex cum vitae ullam. Consequuntur.</p>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci possimus hic aperiam fugit minima, temporibus blanditiis corporis excepturi tempore dolorum id optio, nam odio. Est, animi. Hic voluptatibus corporis rem fugit neque? Consequuntur, impedit consequatur. Ex cum vitae ullam. Consequuntur.</p>
+        <ProjectsCard bgColor='#FFF4A3' source={require('./../../Images/register_login_page.png')} >
+          <h1>Register/Login System <a href="https://dark-gray-kangaroo-gear.cyclic.app/" target="_blank" rel="noreferrer">visit site</a> </h1>
+          <p>In this project I've created Register and login system. On which users can share their information to SignUp on platform</p>
+          <h3>Technology used :</h3>
+          <p>ReactJS</p>
+          <p>NodeJS</p>
+          <p>MongoDB</p>
+          <p>axios</p>
+          <p>cyclic for deploment</p>
         </ProjectsCard>
         
         <ProjectsCard bgColor='#96D4D4' source={require('./../../Images/bg3.png')} >

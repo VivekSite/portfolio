@@ -8,6 +8,15 @@
 }
 
 
+/*––––––––––––––– Logo Styling ––––––––––––––*/
+#logo{
+  width: 50px;
+}
+
+#logo img{
+  width: 100%;
+}
+
 /*****************  Layout Styling  *****************/
 
 #Layout{
