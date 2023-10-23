@@ -123,6 +123,7 @@
 }
 
 #menu:hover{
+  cursor: pointer;
   box-shadow: 2px 2px 5px #3b3b3b;
   color: #e4f0e0;
   background-color: #3b3b3b;
