@@ -50,7 +50,7 @@ const Resume = () => {
         </div>
         <div id="achievement" className='skills'>
           <h2 className='resume-title'>Achievements</h2>
-          <h3>On Codewars : <span>Solved 250+ Questions</span></h3>
+          <h3>On Codewars : <span>Solved 300+ Questions</span></h3>
           <h3>On LeetCode : <span>Solved 10+ Questions</span></h3>
           <h3>On HackerEarth : <span>Solved 17+ Questions</span></h3>
           <h3>Typing Speed : <span>average-50wpm, max-70wpm</span></h3>

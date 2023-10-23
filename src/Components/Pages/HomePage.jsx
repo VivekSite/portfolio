@@ -22,7 +22,7 @@ export default function HomePage() {
         <h3>Please Wait...</h3>
       </section>
       <section id="image-search">
-        <img src={`https://picsum.photos/${ getWidth() > 500 ? getWidth()-480 : getWidth()}/800?${search}`} alt="Please Wait..." />
+        <img src={`https://picsum.photos/${ getWidth() > 500 ? getWidth()-480 : getWidth()}/800?${search}`} alt="" />
       </section>
       <div style={{textAlign:'center', marginTop:'5rem'}}>
         <p style={{marginBottom:'1rem'}}>This is randomaly generated image. When you type something it will automatically  Generate Diffenrent Random Image.<br />You can Try this image generator</p>
