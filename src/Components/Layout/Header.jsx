@@ -14,7 +14,7 @@ const Header = () => {
         <div id="menubar" className=''>
           <NavLink to='/portfolio/' className='nav-link'>Home</NavLink>
           <NavLink to='/portfolio/skills' className='nav-link'>Skills</NavLink>
-          <NavLink to='/portfolio/resume' className='nav-link'>Resume</NavLink>
+          <NavLink to='https://drive.google.com/file/d/1HKodOwdu-QQuWEo6BOxsTcAgvxDKu3BP/view?usp=sharing' className='nav-link'>Resume</NavLink>
           <NavLink to='/portfolio/projects' className='nav-link'>Projects</NavLink>
           {/* <NavLink to='/portfolio/services' className='nav-link'>Services</NavLink> */}
           <NavLink to='/portfolio/contact' className='nav-link'>Contact</NavLink>
