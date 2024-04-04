@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.4a8a9b47.css",
-    "main.js": "/portfolio/static/js/main.b8458018.js",
+    "main.css": "/portfolio/static/css/main.ab15e244.css",
+    "main.js": "/portfolio/static/js/main.de57a0cd.js",
     "static/media/image_generator.png": "/portfolio/static/media/image_generator.6b09bf7dd1ecc28d8560.png",
     "static/media/portfolio.png": "/portfolio/static/media/portfolio.bdd7977f53dd7d7342a2.png",
     "static/media/register_login_page.png": "/portfolio/static/media/register_login_page.fa5c3e4796bdd005b9a2.png",
     "static/media/logo.png": "/portfolio/static/media/logo.c1bba7719ecb897ea949.png",
+    "static/media/vivek_image_square.jpeg": "/portfolio/static/media/vivek_image_square.d57181db3e558dd5a08c.jpeg",
     "static/media/404.png": "/portfolio/static/media/404.0aa9e308f47c564851f7.png",
     "index.html": "/portfolio/index.html",
-    "main.4a8a9b47.css.map": "/portfolio/static/css/main.4a8a9b47.css.map",
-    "main.b8458018.js.map": "/portfolio/static/js/main.b8458018.js.map"
+    "main.ab15e244.css.map": "/portfolio/static/css/main.ab15e244.css.map",
+    "main.de57a0cd.js.map": "/portfolio/static/js/main.de57a0cd.js.map"
   },
   "entrypoints": [
-    "static/css/main.4a8a9b47.css",
-    "static/js/main.b8458018.js"
+    "static/css/main.ab15e244.css",
+    "static/js/main.de57a0cd.js"
   ]
 }
