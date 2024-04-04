@@ -175,6 +175,45 @@
   }
 }
 
+/*––––––––––––––– AboutPage Styling ––––––––––––––*/
+#AboutSection {
+  display: flex;
+  justify-content: space-between;
+  margin: 10rem 0;
+  padding: 0 5rem;
+}
+
+#Image-Section img {
+  width: 300px;
+  border-radius: 50%;
+  margin-right: 5rem;
+}
+
+.color-text {
+  color: #006eff;
+  font-weight: 900;
+}
+
+.content-para {
+  margin-top: 2rem;
+  text-justify:newspaper;
+}
+
+@media (max-width:1000px){
+  #AboutSection {
+    display: block;
+  }
+  #Image-Section{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  #Image-Section img {
+    margin-right: 0;
+  }
+}
+
 /*****************  Skills Card Styling  *****************/
 
 #cardsContainer{
